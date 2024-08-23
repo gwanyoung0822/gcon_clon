@@ -177,7 +177,7 @@ body {
     left: 0;
     width: calc(100% + 10px);
     background: #101d41;
-    /* display: none; */
+    display: none;
 }
 /* .lang:hover .country{
     display: block;
@@ -199,4 +199,252 @@ body {
 }
 .country > li > a:hover{
     color: #fff;
+}
+
+/* 헤더 미들 */
+.header-middle{
+  position: relative;
+  display: block;
+  background-color: #fff;
+}
+.header-middle .pagew{
+  text-align: center;
+  padding: 20px 30px 15px 30px;
+}
+.gglogo{
+  position: relative;
+  display: block;
+  float: left;
+}
+.logo{
+  position: relative;
+  display: inline-block;
+
+}
+.bro{
+  position: relative;
+  display: block;
+  float: right;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 3rem;
+  color: #333;
+  border-radius: 1.5rem;
+  border: 1px solid #b7b7b7;
+  padding: 0 13px;
+  margin-top: 13px;
+}
+.bro i img{
+  vertical-align: -2px;
+}
+/* 헤더 바텀 */
+.header-bottom{
+  position: relative;
+  display: block;
+  border-top: 1px solid #e9eff3;
+  background-color: #fff;
+}
+.header-bottom .pagew{
+  height: 65px;
+  background-color: lightgoldenrodyellow;
+}
+.logo-gnb{
+  position: relative;
+  top: 16px;
+  left: 0;
+  display: none;
+}
+.gnb{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  float: right;
+}
+.mainmenu{
+  position: relative;
+  display: block;
+  width: 90%;
+  float: left;
+  
+}
+.mainmenu > li{
+  position: relative;
+  display: block;
+  width: 20%;
+  float: left;
+  text-align: center;
+}
+.mainmenu > li > a{
+  position: relative;
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: "NanumSquare";
+  color: #333;
+  line-height: 6.5rem;
+}
+.mainmenu > li > a::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #ec008c;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.mainmenu > li:hover > a{
+  color: #ec008c;
+}
+.mainmenu > li:hover > a::after{
+  opacity: 1;
+}
+/* 서브메뉴 */
+.submenu{
+  position: absolute;
+  top: 65px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 230px;
+  background-color: #fff;
+  text-align: left;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #333;
+  line-height: 2rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* 스크롤 생성 */
+  max-height: 450px;
+  /* overflow: hidden; */
+  overflow-y: auto;
+  /* 영역을 숨김 */
+  visibility: hidden;
+  opacity: 0;
+}
+.submenu_focus{
+  visibility: visible;
+  opacity: 1;
+}
+.submenu > li {
+  position: relative;
+  display: block;
+}
+.submenu > li > a {
+  position: relative;
+  display: block;
+  font-size: 1.6rem;
+  line-height: 40px;
+  padding: 0 10px;
+  transition: color 0.3s;
+}
+.submenu > li:hover > a {
+  color: #fff;
+  background-color: #ec008c;
+}
+.submenu > li > a > i {
+  float: right;
+  margin-top: 11px;
+}
+.submenu_focus_link {
+  background-color: #ec008c;
+}
+.submenu_focus_link > a {
+  color: #fff;
+}
+.submenu-3rd{
+  position: relative;
+  background-color: #efd3ec;
+  display: none;
+}
+.submenu-3rd > li > a {
+  position: relative;
+  display: block;
+  font-size: 1.4rem;
+  line-height: 40px;
+  padding: 0 10px;
+
+  transition: background 0.3s;
+}
+.submenu-3rd > li:hover > a {
+  background-color: #f1c3ec;
+}
+/* more-menu */
+.more-menu{
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.more-menu >li{
+  position: relative;
+  display: block;
+  float: left;
+  margin-left: 34px;
+}
+.more-menu>li>a{
+  position: relative;
+  display: block;
+}
+.hm{
+  position: relative;
+  display: block;
+  width: 24px;
+  height: 19px;
+  /* background-color: #101d41; */
+}
+.hm span{
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  display: block;
+  background: #424242;
+  transition: left 0.3s;
+}
+.hm span:nth-child(1){
+  top: 0;
+  left: 0;
+}
+.hm span:nth-child(2){
+  top: 50%;
+  transform: translateY(-50%);
+  left: 4px;
+}
+.hm span:nth-child(3){
+  bottom: 0;
+  left: 0;
+}
+.hm:hover span:nth-child(1){
+  left: 4px;
+}
+.hm:hover span:nth-child(2){
+  left: 0;
+}
+.hm:hover span:nth-child(3){
+  left: 4px;
+}
+.search-bt{
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 400;
+  width: 24px;
+  height: 18px;
+}
+.xi-search{
+  vertical-align: 40px;
+}
+/*  */
+.header-dim{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.3);
+  z-index: 99999;
+  display: none;
 }
