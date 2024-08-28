@@ -1,7 +1,8 @@
-@charset "utf-8";
+@charset "uft-8";
+@import url("xeicon.css");
 @import url("notosanskr/NotoSansKR.css");
 @import url("nanumsquare/nanumsquare.css");
-@import url("xeicon.css");
+
 /* Chrome, Safari용 스크롤 바 */
 ::-webkit-scrollbar {
   width: 5px;
@@ -53,6 +54,7 @@ body {
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 1.25;
+  height: 2000px;
   color: #333;
   font-family: "Noto Sans KR", sans-serif;
 }
@@ -63,8 +65,8 @@ body {
 }
 .clearfix::after {
   content: "";
-  display: block;
   position: relative;
+  display: block;
   width: 100%;
   clear: both;
 }
@@ -75,7 +77,7 @@ body {
 }
 /* 안내창 */
 /* 고정메뉴 */
-/* 전체메뉴 */
+/* 전체영역 */
 .wrap {
   position: relative;
   display: block;
@@ -105,12 +107,7 @@ body {
   display: block;
   float: left;
   width: 175px;
-}
-.h-link-list > li:hover{
-    background-color: #fff;
-}
-.h-link-list > li:hover > a{
-    color: #2a3a67;
+  background-color: rgb(56, 120, 99);
 }
 .h-link-list > li::before {
   content: "";
@@ -135,93 +132,92 @@ body {
   letter-spacing: -0.1rem;
   transition: all 0.3s;
 }
-.h-help-list{
-    position: relative;
-    display: block;
-    float: right;
-    padding: 0 10px;
+.h-link-list > li > a:hover {
+  background-color: #fff;
+  color: #2a3a67;
 }
-.h-help-list > li{
-    position: relative;
-    display: block;
-    float: left;
-    padding: 0 10px;
+.h-help-list {
+  position: relative;
+  display: block;
+  float: right;
+  padding: 0 10px;
+  /* background-color: antiquewhite; */
 }
-.h-help-list > li::before{
-    content: "";
-    position: absolute;
-    left: -1px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 2px;
-    height: 10px;
-    background: rgba(255, 255, 255, 0.3);
+.h-help-list > li {
+  position: relative;
+  display: block;
+  float: left;
+  padding: 0 10px;
 }
-.h-help-list > li:first-child:before{
-    content: none;
+.h-help-list > li::before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.3);
 }
-.h-help-list > li > a{
-    position: relative;
-    display: block;
-    font-size: 1.3rem;
-    font-weight: 400;
-    color: #fff;
-    line-height: 4rem;
+.h-help-list > li:first-child:before {
+  content: none;
 }
-.h-help-list > li > a > i{
-    margin-left: 3px;
+.h-help-list > li > a {
+  position: relative;
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #fff;
+  line-height: 4rem;
 }
-.country{
-    position: absolute;
-    top: 4rem;
-    left: 0;
-    width: calc(100% + 10px);
-    background: #101d41;
-    display: none;
+.h-help-list > li > a > i {
+  margin-left: 3px;
 }
-/* .lang:hover .country{
-    display: block;
-} */
-.country > li{
-    position: relative;
-    display: block;
-    text-align: center;
-    line-height: 4rem;
-    
+.country {
+  position: absolute;
+  top: 4rem;
+  left: 0;
+  width: calc(100% + 20px);
+  padding-bottom: 10px;
+  background: #101d41;
+  display: none;
 }
-.country > li > a{
-    position: relative;
-    display: inline-block;
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 1.3rem;
-    font-weight: 400;
-    transition: all 0.3s;
+.country > li {
+  position: relative;
+  display: block;
+  text-align: center;
+  line-height: 4rem;
 }
-.country > li > a:hover{
-    color: #fff;
+.country > li > a {
+  position: relative;
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.3rem;
+  font-weight: 400;
+  transition: all 0.3s;
 }
-
-/* 헤더 미들 */
-.header-middle{
+.country > li > a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+.header-middle {
   position: relative;
   display: block;
   background-color: #fff;
 }
-.header-middle .pagew{
+.header-middle .pagew {
   text-align: center;
   padding: 20px 30px 15px 30px;
 }
-.gglogo{
+.gglogo {
   position: relative;
   display: block;
   float: left;
 }
-.logo{
+.logo {
   position: relative;
   display: inline-block;
-
 }
-.bro{
+.bro {
   position: relative;
   display: block;
   float: right;
@@ -234,48 +230,47 @@ body {
   padding: 0 13px;
   margin-top: 13px;
 }
-.bro i img{
+.bro i img {
   vertical-align: -2px;
 }
-/* 헤더 바텀 */
-.header-bottom{
+/* header-bottom */
+.header-bottom {
   position: relative;
   display: block;
   border-top: 1px solid #e9eff3;
   background-color: #fff;
 }
-.header-bottom .pagew{
+.header-bottom .pagew {
   height: 65px;
-  background-color: lightgoldenrodyellow;
+  background-color: #fff;
 }
-.logo-gnb{
-  position: relative;
+.logo-gnb {
+  position: absolute;
   top: 16px;
   left: 0;
   display: none;
 }
-.gnb{
+.gnb {
   position: relative;
   display: block;
   width: 100%;
   height: 100%;
   float: right;
 }
-.mainmenu{
+.mainmenu {
   position: relative;
   display: block;
   width: 90%;
   float: left;
-  
 }
-.mainmenu > li{
+.mainmenu > li {
   position: relative;
   display: block;
   width: 20%;
   float: left;
   text-align: center;
 }
-.mainmenu > li > a{
+.mainmenu > li > a {
   position: relative;
   display: inline-block;
   font-size: 2rem;
@@ -284,7 +279,7 @@ body {
   color: #333;
   line-height: 6.5rem;
 }
-.mainmenu > li > a::after{
+.mainmenu > li > a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -296,21 +291,21 @@ body {
   opacity: 0;
   transition: opacity 0.3s;
 }
-.mainmenu > li:hover > a{
+.mainmenu > li:hover > a {
   color: #ec008c;
 }
-.mainmenu > li:hover > a::after{
+.mainmenu > li:hover > a::after {
   opacity: 1;
 }
-/* 서브메뉴 */
-.submenu{
+/* depth메뉴 */
+.submenu {
+  background-color: #fff;
   position: absolute;
   top: 65px;
   left: 50%;
   transform: translateX(-50%);
   display: block;
   width: 230px;
-  background-color: #fff;
   text-align: left;
   font-size: 1.6rem;
   font-weight: 400;
@@ -320,15 +315,19 @@ body {
   padding-bottom: 10px;
   /* 스크롤 생성 */
   max-height: 450px;
-  /* overflow: hidden; */
+  /* overflow-x: hidden; */
   overflow-y: auto;
   /* 영역을 숨김 */
   visibility: hidden;
   opacity: 0;
+  /* top: 50px; */
+  transition: all 0.3s;
+
 }
 .submenu_focus{
   visibility: visible;
   opacity: 1;
+  /* top: 65px; */
 }
 .submenu > li {
   position: relative;
@@ -340,8 +339,10 @@ body {
   font-size: 1.6rem;
   line-height: 40px;
   padding: 0 10px;
+
   transition: color 0.3s;
 }
+
 .submenu > li:hover > a {
   color: #fff;
   background-color: #ec008c;
@@ -356,10 +357,11 @@ body {
 .submenu_focus_link > a {
   color: #fff;
 }
-.submenu-3rd{
+/* 3.depth메뉴 */
+.submenu-3rd {
   position: relative;
-  background-color: #efd3ec;
   display: none;
+  background-color: #efd3ec;
 }
 .submenu-3rd > li > a {
   position: relative;
@@ -374,30 +376,30 @@ body {
   background-color: #f1c3ec;
 }
 /* more-menu */
-.more-menu{
+.more-menu {
   position: absolute;
   right: 8px;
   top: 50%;
   transform: translateY(-50%);
 }
-.more-menu >li{
+.more-menu > li {
   position: relative;
   display: block;
   float: left;
   margin-left: 34px;
 }
-.more-menu>li>a{
+.more-menu > li > a {
   position: relative;
   display: block;
 }
-.hm{
+.hm {
   position: relative;
   display: block;
   width: 24px;
   height: 19px;
-  /* background-color: #101d41; */
+  /* background-color: #ec008c; */
 }
-.hm span{
+.hm span {
   position: absolute;
   width: 20px;
   height: 2px;
@@ -405,46 +407,66 @@ body {
   background: #424242;
   transition: left 0.3s;
 }
-.hm span:nth-child(1){
+.hm span:nth-child(1) {
   top: 0;
   left: 0;
 }
-.hm span:nth-child(2){
+.hm span:nth-child(2) {
   top: 50%;
   transform: translateY(-50%);
   left: 4px;
 }
-.hm span:nth-child(3){
-  bottom: 0;
+.hm span:nth-child(3) {
+  bottom: 1px;
   left: 0;
 }
-.hm:hover span:nth-child(1){
+.hm:hover span:nth-child(1) {
   left: 4px;
 }
-.hm:hover span:nth-child(2){
-  left: 0;
+.hm:hover span:nth-child(2) {
+  left: 0px;
 }
-.hm:hover span:nth-child(3){
+.hm:hover span:nth-child(3) {
   left: 4px;
 }
-.search-bt{
+.search-bt {
+  display: block;
   font-size: 2.4rem;
+  line-height: 24px;
   color: #333;
-  font-weight: 400;
+  font-weight: bold;
   width: 24px;
-  height: 18px;
+ 
+  margin-bottom: 3px;
+  /* background-color: #ec008c; */
 }
-.xi-search{
-  vertical-align: 40px;
-}
-/*  */
-.header-dim{
+
+/* 서브메뉴에 호버했을때 바탕화면 */
+.header-dim {
+  display: none;
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0, 0, 0, 0.6);
   z-index: 99999;
-  display: none;
+}
+/* 상단 스크롤시 클래스 추가 */
+.h-fix{
+  position: fixed;
+  top: -141px;
+  left: 0;
+  width: 100%;
+}
+.h-show{
+  display: block;
+  width: 20%;
+  text-align: center;
+}
+.h-show img{
+  width: 70%;
+}
+.h-fix-gnb{
+  width: 80%;
 }
