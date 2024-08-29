@@ -322,9 +322,8 @@ body {
   opacity: 0;
   /* top: 50px; */
   transition: all 0.3s;
-
 }
-.submenu_focus{
+.submenu_focus {
   visibility: visible;
   opacity: 1;
   /* top: 65px; */
@@ -436,7 +435,7 @@ body {
   color: #333;
   font-weight: bold;
   width: 24px;
- 
+
   margin-bottom: 3px;
   /* background-color: #ec008c; */
 }
@@ -453,20 +452,21 @@ body {
   z-index: 99999;
 }
 /* 상단 스크롤시 클래스 추가 */
-.h-fix{
+.h-fix {
   position: fixed;
   top: -141px;
   left: 0;
   width: 100%;
 }
-.h-show{
+.h-show {
   display: block;
   width: 20%;
   text-align: center;
 }
-.h-show img{
+.h-show img {
   width: 70%;
 }
-.h-fix-gnb{
+.h-fix-gnb {
   width: 80%;
 }
+
