@@ -4,7 +4,7 @@
   position: relative;
   display: block;
   margin-bottom: 50px;
-  background-color: rgb(221, 250, 215);
+  /* background-color: rgb(221, 250, 215); */
 }
 .content .pagew {
   width: 1420px;
@@ -33,7 +33,7 @@
   padding: 30px;
 }
 .notice-bg {
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.2);
 }
 /* .sw-notice a{
     position: relative;
@@ -169,6 +169,7 @@
   font-weight: 500 !important;
 }
 .notice-cont {
+  /* background-color: antiquewhite; */
   position: relative;
   display: block;
   margin-left: 50px;
@@ -178,13 +179,14 @@
   position: absolute;
   left: 0;
   top: 0;
+
   color: #fff;
   display: none;
 }
 .notice-cont > li:first-child {
   display: block;
 }
-/* 공지사항 */
+/* 공지사항 내용영역 */
 .notice-box {
   position: relative;
   display: block;
@@ -249,57 +251,56 @@
 }
 .notice-box-more {
   position: absolute;
-  bottom: 0;
+  bottom: 5px;
   display: block;
   font-family: "NanumSquare";
   font-size: 1.7rem;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.5);
   letter-spacing: -0.5px;
+
   line-height: 1.1rem;
 }
 
 /* 알림영역 */
-.content-alram {
+.content-alram{
   position: relative;
-  width: 100%;
   display: block;
+  width: 100%;
   height: 100%;
 }
 .alram-bg {
-  background: #2a3a67 url("../images/bg_pattern.png");
+  background: #2a3a67 url('../images/bg_pattern.png');
 }
 
 .alram-list-bg {
-  background: url("../images/bg_gray.jpg") no-repeat center;
+  background: url('../images/bg_gray.jpg') no-repeat center;
   background-size: cover;
 }
-.content-alram-left,
-.content-alram-right {
+.content-alram-left ,.content-alram-right{
   position: relative;
   display: block;
   width: 50%;
   height: 100%;
   float: left;
   padding: 40px 17px 20px 25px;
-  /* background-color: #eaedf4; */
 }
-.alram-top {
+.alram-top{
   position: relative;
   display: block;
 }
 .alram-tit {
   position: relative;
   display: block;
-  font-family: "NanumSquare";
+  font-family: 'NanumSquare';
   font-size: 2.4rem;
   font-weight: 500;
   color: #fff;
   letter-spacing: -0.5px;
   line-height: 30px;
 }
-.alram-tit::before {
-  content: "";
+.alram-tit::before{
+  content: '';
   position: absolute;
   left: 0;
   top: -10px;
@@ -308,13 +309,14 @@
   background: #fff;
   border-radius: 100%;
 }
+
 .alram-more {
   position: absolute;
   right: 0;
   top: 9px;
 
   display: block;
-  font-family: "NanumSquare";
+  font-family: 'NanumSquare';
   font-size: 1.7rem;
   font-weight: 500;
   color: #fff;
@@ -324,9 +326,8 @@
   position: relative;
   display: block;
   padding-top: 35px;
-  /* background-color: #fff; */
 }
-.alram-edu {
+.alram-edu{
   position: relative;
   display: block;
   width: 100%;
@@ -335,30 +336,29 @@
   background-size: cover;
   margin-bottom: 25px;
 }
+.alram-edu-link:hover .alram-edu-tit{
+  text-decoration: underline;
+}
 .alram-edu-tit {
   position: relative;
   display: block;
-  font-family: "NanumSquare";
-  font-size: 2rem;
+  font-family: 'NanumSquare';
+  font-size: 2.0rem;
   font-weight: 500;
   color: #fff;
   line-height: 2.6rem;
   margin-bottom: 10px;
-}
-.alram-edu-desc {
+}.alram-edu-desc {
   position: relative;
   display: block;
-  font-family: "NanumSquare";
+  font-family: 'NanumSquare';
   font-size: 1.7rem;
   font-weight: 100;
   line-height: 2.4rem;
   color: #fff;
 }
-.alram-edu-link:hover .alram-edu-tit{
-  text-decoration: underline;
-}
-.sw-edu{
-  padding-bottom: 60px;
+.sw-edu {
+padding-bottom: 60px;
 }
 .sw-edu-control{
   position: absolute;
@@ -366,7 +366,6 @@
   bottom: 0;
   display: block;
   white-space: nowrap;
-  
 }
 .sw-edu-prev {
   position: relative;
@@ -410,17 +409,19 @@
 }
 .sw-edu-pg .swiper-pagination-current {
   margin-right: 10px;
+  /* color: red; */
 }
 
 .sw-edu-pg .swiper-pagination-total {
   margin-left: 10px;
 }
-.edu-bg1{
-  background: url("../images/edu1.jpg")no-repeat;
+.edu-bg1 {
+  background: url('../images/edu1.jpg') no-repeat top;
   background-size: cover;
 }
-.edu-bg2{
-  background: url("../images/edu2.png")no-repeat;
+
+.edu-bg2 {
+  background: url('../images/edu2.png') no-repeat top;
   background-size: cover;
 }
 .alram-tab-menu {
@@ -438,15 +439,13 @@
   font-size: 2.4rem;
   font-family: 'NanumSquare';
   color: rgba(85, 85, 85, 0.5);
-  color: rgba(85, 85, 85, 0.5);
-
   font-weight: 500;
   letter-spacing: -0.5px;
   margin-right: 20px;
   transition: color 0.3s;
 }
 
-.alram-tab-menu a::before {
+.alram-tab-menu a:before {
   content: '';
   position: absolute;
   left: 0;
@@ -459,11 +458,12 @@
   transition: opacity 0.3s;
 }
 .alram-tab-menu a:hover{
-  color: rgba(85,85,85,1);
+  color: rgba(85, 85, 85, 1);
 }
 .alram-tab-menu a:hover::before{
   opacity: 1;
 }
+/* js tab적용 */
 .alram-tab-menu-focus {
   color: rgba(85, 85, 85, 1.0) !important;
 }
@@ -651,15 +651,15 @@
     color: #fff;
 
 }
-/* contetn-navi */
-.content-navi {
+/* content-navi */
+.content-navi{
   position: relative;
-  display: block;
-  height: 80px;
-  width: 1280px;
-  margin: 0 auto;
+    display: block;
+    height: 80px;
+    width: 1280px;
+    margin: 0 auto;
 }
-.content-tab {
+.content-tab{
   position: relative;
   display: block;
   height: 100%;
@@ -667,37 +667,41 @@
   cursor: pointer;
   overflow: hidden;
 }
-.content-tab-img {
+.content-tab-img{
   position: absolute;
   right: 0;
   bottom: 0;
   display: block;
-  height: 100%;
   width: 100%;
+  height: 100%;
 }
-.content-tab-icon {
+.content-tab-icon{
   position: relative;
   display: block;
   width: 80px;
   height: 80px;
   float: left;
-  font-size: 3rem;
+  font-size: 3.0rem;
   text-align: center;
   line-height: 80px;
+
   color: #fff;
   opacity: 0;
 }
 .content-tab-tit {
   position: relative;
   display: block;
+
   float: left;
+
   padding: 30px 25px;
+
   font-size: 1.9rem;
-  font-family: "NanumSquare";
+  font-family: 'NanumSquare';
   font-weight: 400;
   color: #333;
 }
-.sw-navi-prev {
+.sw-navi-prev{
   position: absolute;
   left: 0;
   top: 0;
@@ -705,6 +709,7 @@
   width: 80px;
   height: 80px;
   background: #fff;
+
   text-align: center;
   line-height: 80px;
   font-size: 2.4rem;
@@ -714,6 +719,7 @@
   border: 1px solid #eaedf4;
   border-right: none;
 }
+
 .sw-navi-prev:hover {
   color: #ec008c;
 }
@@ -740,20 +746,20 @@
 .sw-navi-next:hover {
   color: #ec008c;
 }
-/* 현재 포커스가 된 slide tab */
-.sw-navi .swiper-slide-active .content-tab {
-  background-color: #ec008c;
+/* 현재 포커스가 된 slide tap */
+.sw-navi .swiper-slide-active .content-tab{
+  background-color:#ec008c ;
 }
-.sw-navi .swiper-slide-active .content-tab-img {
+.sw-navi .swiper-slide-active .content-tab .content-tab-img{
   display: none;
 }
-.sw-navi .swiper-slide-active .content-tab-icon {
+.sw-navi .swiper-slide-active .content-tab .content-tab-icon{
   opacity: 1;
-  background-color: #bf0172;
+  background-color:#bf0172 ;
 }
-.sw-navi .swiper-slide-active .content-tab-icon i {
-  opacity: 0.5;
+.sw-navi .swiper-slide-active .content-tab .content-tab-icon i{
+opacity: 0.5;
 }
-.sw-navi .swiper-slide-active .content-tab-tit {
+.sw-navi .swiper-slide-active .content-tab .content-tab-tit{
   color: #fff;
 }

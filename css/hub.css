@@ -116,18 +116,18 @@
   transition: transform 0.3s;
 }
 .hub-menu > li > a:hover{
-    transform: translateY(-5%);
-} 
-
+    transform: translateY(-10%);
+}
 .h-icon {
-  position: relative;
-  display: block;
-  margin: 0 auto;
+    position: relative;
+    display: block;
+    margin: 0 auto;
 
-  width: 8rem;
-  height: 8rem;
-  border-radius: 100%;
-  background: rgba(255, 255, 255, 0.1);
+    width: 8rem;
+    height: 8rem;
+    border-radius: 100%;
+    background: rgba(255, 255, 255, 0.1);
+
 }
 .h-icon::after{
     content: "";
@@ -135,6 +135,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+
     width: 42px;
     height: 45px;
     background: url('../images/conIcon.png') no-repeat;
@@ -179,6 +180,7 @@
 .hub-menu>li:nth-child(10)>a .h-icon:after {
     background: url('../images/ggsc_icon.png') no-repeat center;
 }
+
 .h-txt {
     position: relative;
     display: inline-block;
