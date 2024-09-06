@@ -17,7 +17,7 @@
   position: relative;
   display: block;
   overflow: hidden;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 .footer-menu-list > li {
   position: relative;
