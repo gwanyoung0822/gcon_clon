@@ -398,6 +398,7 @@ body {
   padding-bottom: 10px;
   /* 스크롤 생성 */
   max-height: 450px;
+  background-color: #fff;
   /* overflow-x: hidden; */
   overflow-y: auto;
   /* 영역을 숨김 */
